@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "outfit";
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "young-serif";
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+body {
+  background-color: #f3e5d8;
+}
+
+p,
+ul,
+ol {
+  font-size: 17px;
+  color: rgba(119, 116, 111, 1);
+  font-family: "outfit";
+}
+
+h1 {
+  color: rgba(49, 48, 46, 1);
+  font-family: "young-serif";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-top: 30px;
+  margin-bottom: 19px;
+}
+
+h2 {
+  color: rgba(129, 75, 67, 1);
+  font-family: "young-serif";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+}
+
+.main-frame {
+  width: 735px;
+  height: 1708px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding-left: 38px;
+  padding-right: 38px;
+}
+
+header p{
+    width: 631px;
+    height: 47px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+
+}
+
+img {
+  width: 660px;
+  height: 302px;
+  border-radius: 9px;
+  margin: 38px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+
+}
+
+.PrepTime {
+  width: 657px;
+  height: 184px;
+  border-radius: 20px;
+  background-color: rgba(255, 247, 252, 1);
+  padding-left: 29px;
+  padding-right: 29px;
+  margin-top: 28px;
+  margin-bottom: 31px;
+}
+
+.PrepTime h2 {
+  width: 167px;
+  height: 29px;
+  color: rgba(122, 60, 85, 1);
+  font-size: 20px;
+  font-family: "outfit";
+  font-weight: 600;
+  line-height: 22px;
+  padding-top: 29px;
+  margin-bottom: 10px;
+}
+
+.PrepTime ul {
+  width: 270px;
+  height: 105px;
+  margin-top: 0px;
+  /*font-weight: 600;*/
+  line-height: 29px;
+}
