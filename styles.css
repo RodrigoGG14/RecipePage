@@ -124,18 +124,41 @@ img {
   margin-bottom: 10px;
 }
 
+.instructions-list ol {
+  width: 660px;
+  height: 300px;
+  font-size: 17px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 
-hr{
+.instructions-list li {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.nutrition-table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+hr {
   width: 100%;
   height: 0px;
   border: 1px solid rgba(224, 224, 224, 1);
   margin-top: 32px;
   margin-bottom: 32px;
-
-
 }
 
 li::marker {
   color: rgba(122, 60, 85, 1);
   font-size: small;
+}
+
+.instructions-list li::marker {
+  color: rgba(122, 60, 85, 1);
+  font-weight: bold;
+  font-size: 1em; /* Makes the marker size relative to the list item's font size */
 }
