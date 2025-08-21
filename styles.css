@@ -44,16 +44,14 @@ h2 {
 
 .main-frame {
   width: 735px;
-  height: 1708px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 124px;
   margin-bottom: 124px;
   background-color: #ffffff;
   border-radius: 20px;
-  padding-left: 38px;
-  padding-right: 38px;
-  padding-top: 38px;
+  /* Usar padding en todos los lados para un espaciado consistente y eliminar la altura fija. */
+  padding: 38px;
 }
 
 header p {
@@ -139,9 +137,48 @@ img {
 
 .nutrition-table {
   width: 100%;
-  height: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+  border-collapse: collapse; /* Une los bordes de las celdas para un look limpio */
+  margin-top: 24px;
+}
+
+.nutrition-table caption{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "outfit";
+  color: rgba(119, 116, 111, 1);
+  padding-bottom: 19px;
+  line-height: 29px;
+  text-align: left;
+  width: 645px;
+  height: 31px;
+}
+
+.nutrition-table th, .nutrition-table td {
+  font-size: 16px;
+  text-align: left;
+  padding: 12px 0px 12px 32px;
+  font-family: "outfit";
+  /* Esta es la línea horizontal que reemplaza al <hr> */
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+}
+
+.nutrition-table th{
+  font-weight: 400;
+  color: rgba(119, 116, 111, 1);
+  width: 72px;
+  height: 31px;
+  padding-right: 200px;
+}
+
+.nutrition-table td{
+  font-weight: 600;
+  color: rgba(129, 75, 67, 1);
+  
+}
+
+.nutrition-table tr:last-child th,
+.nutrition-table tr:last-child td {
+  border-bottom: none;
 }
 
 hr {
