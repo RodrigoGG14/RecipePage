@@ -111,6 +111,13 @@ img {
   padding-left: 20px;
 }
 
+hr{
+  width: 657px;
+  height: 0px;
+  border: 1px solid rgba(224, 224, 22, 4, 1);
+  margin-top: 30px;
+}
+
 li::marker {
   color: rgba(122, 60, 85, 1);
   font-size: small;
