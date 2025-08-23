@@ -8,6 +8,12 @@
   src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /*Media query para desktop*/
 @media (max-width: 1920px) {
   body {
@@ -204,12 +210,11 @@
 }
 
 /** Media Query para dispositivos moviles **/
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   body {
     background-color: white;
-    width: 100%;
-    height: 100%;
-
+    width: auto;
+    height: auto;
   }
 
   .main-frame {
@@ -226,27 +231,115 @@
     border-radius: 0px;
     margin: 0px;
     padding: 0px;
-    display: block; 
-    object-fit: cover; 
+    display: block;
+    object-fit: cover;
   }
 
-  h1{
+  h1 {
     width: auto;
     height: auto;
     margin-top: 70px;
+    /*font-size: 37px;*/
+    /* Usamos clamp() para una tipografía fluida. */
+    /* Mínimo: 32px, Preferido: escala con el ancho, Máximo: 40px */
+    font-size: clamp(1.7rem, 9vw, 2.313rem);
+    /*
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 20px;*/
     padding-top: 0;
-    padding-bottom: 18px;
+    padding-bottom: 20px;
+  }
+
+  h2 {
+    width: auto;
+    height: auto;
+    /*
+    padding-left: 20px;
+    padding-right: 20px;*/
+    font-size: 32px;
+    margin-top: 30px;
   }
 
   header p {
     width: auto;
     height: auto;
+    /*
+    padding-left: 20px;
+    padding-right: 20px;*/
+    font-size: 17px;
+    line-height: 28px;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+  }
+
+  .PrepTime {
+    width: auto;
+    height: auto;
+    padding-top: 0px;
+    margin-top: 0px;
+    /*
+    padding-left: 20px;
+    padding-right: 20px;*/
+  }
+
+  .PrepTime h2 {
+    width: auto;
+    height: auto;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  li {
+    width: auto;
+    height: auto;
+/*
     padding-left: 20px;
     padding-right: 20px;
+    */
+    font-size: 19px;
+    line-height: 25px;
+  }
+
+  .PrepTime ul {
+    width: auto;
+    height: auto;
+  }
+
+  .PrepTime li {
+    line-height: 25px;
+    font-size: 18px;
+    margin-right: 0; /* Este margen causaba que el contenido se saliera de la pantalla */
+    padding-bottom: 10px;
+  }
+
+  .nutrition-table caption, .nutrition-table th, .nutrition-table td {
+    width: auto;
+    height: auto;
+    /*
+    padding-left: 20px;
+    padding-right: 20px;*/
     font-size: 19px;
     line-height: 28px;
-    padding-bottom: 67px;
   }
+
+  .nutrition-table th {
+    padding-left: 55px;
+    padding-right: 10px;
+  }
+
+  .nutrition-table td {
+    padding-left: 12px;
+    padding-right: 55px;
+  }
+
+  footer{
+    width: auto;
+    height: auto;
+    /*
+    padding-left: 20px;
+    padding-right: 20px;*/
+    font-size: 10px;
+  }
+
+
 }
