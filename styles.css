@@ -211,7 +211,7 @@ body {
   }
 }
 
-/** Media Query para dispositivos moviles **/
+/* Media query para dispositivos moviles */
 @media screen and (max-width: 800px) {
   body {
     background-color: white;
