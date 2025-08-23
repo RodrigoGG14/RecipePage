@@ -8,194 +8,327 @@
   src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
 }
 
+/* Aplicamos box-sizing: border-box a todos los elementos para que el padding y el border
+   se incluyan en el ancho y alto total del elemento, facilitando el diseño responsivo */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Eliminamos el margen por defecto del navegador para que no haya espacios en los bordes */
 body {
-  background-color: #f3e5d8;
+  margin: 0;
 }
 
-p,
-ul,
-ol {
-  font-size: 17px;
-  color: rgba(119, 116, 111, 1);
-  font-family: "outfit";
+/*Media query para desktop*/
+@media (max-width: 1920px) {
+  body {
+    background-color: #f3e5d8;
+  }
+
+  p,
+  ul,
+  ol {
+    font-size: 17px;
+    color: rgba(119, 116, 111, 1);
+    font-family: "outfit";
+  }
+
+  h1 {
+    color: rgba(49, 48, 46, 1);
+    font-family: "young-serif";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding-top: 30px;
+    padding-bottom: 19px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  h2 {
+    color: rgba(129, 75, 67, 1);
+    font-family: "young-serif";
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0%;
+  }
+
+  .main-frame {
+    width: 735px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 124px;
+    margin-bottom: 124px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    /* Usar padding en todos los lados para un espaciado consistente y eliminar la altura fija. */
+    padding: 38px;
+  }
+
+  header p {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0px;
+    text-align: left;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .PrepTime {
+    height: 184px;
+    border-radius: 20px;
+    background-color: rgba(255, 247, 252, 1);
+    padding-left: 29px;
+    padding-right: 29px;
+    padding-bottom: 11px;
+    margin-top: 28px;
+    margin-bottom: 31px;
+  }
+
+  .PrepTime h2 {
+    color: rgba(122, 60, 85, 1);
+    font-size: 20px;
+    font-family: "outfit";
+    font-weight: 600;
+    line-height: 22px;
+    padding-top: 29px;
+    margin-bottom: 10px;
+  }
+
+  .PrepTime ul {
+    margin-top: 0px;
+    /*font-weight: 600;*/
+    line-height: 29px;
+  }
+
+  .PrepTime li {
+    margin-bottom: 5px;
+    padding-left: 20px;
+  }
+
+  .ingredients-list ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 17px;
+  }
+
+  .ingredients-list li {
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  .instructions-list ol {
+    width: 660px;
+    height: 300px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .instructions-list li {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .nutrition-table {
+    width: 100%;
+    border-collapse: collapse; /* Une los bordes de las celdas para un look limpio */
+    margin-top: 24px;
+  }
+
+  .nutrition-table caption {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "outfit";
+    color: rgba(119, 116, 111, 1);
+    padding-bottom: 19px;
+    line-height: 29px;
+    text-align: left;
+  }
+
+  .nutrition-table th,
+  .nutrition-table td {
+    font-size: 16px;
+    text-align: left;
+    padding: 12px 0px 12px 32px;
+    font-family: "outfit";
+    /* Esta es la línea horizontal que reemplaza al <hr> */
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+  }
+
+  .nutrition-table th {
+    font-weight: 400;
+    color: rgba(119, 116, 111, 1);
+    width: 72px;
+    height: 31px;
+    padding-right: 200px;
+  }
+
+  .nutrition-table td {
+    font-weight: 600;
+    color: rgba(129, 75, 67, 1);
+  }
+
+  .nutrition-table tr:last-child th,
+  .nutrition-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  hr {
+    width: 100%;
+    height: 0px;
+    border: 1px solid rgba(224, 224, 224, 1);
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  li::marker {
+    color: rgba(122, 60, 85, 1);
+    font-size: small;
+  }
+
+  .instructions-list li::marker {
+    color: rgba(122, 60, 85, 1);
+    font-weight: bold;
+    font-size: 1em; /* Makes the marker size relative to the list item's font size */
+  }
 }
 
-h1 {
-  color: rgba(49, 48, 46, 1);
-  font-family: "young-serif";
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 100%;
-  letter-spacing: 0%;
-  padding-top: 30px;
-  padding-bottom: 19px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
+/** Media Query para dispositivos moviles **/
+@media screen and (max-width: 800px) {
+  body {
+    background-color: white;
+    width: auto;
+    height: auto;
+  }
 
-h2 {
-  color: rgba(129, 75, 67, 1);
-  font-family: "young-serif";
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 29px;
-  letter-spacing: 0%;
-}
+  .main-frame {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 0px;
+    padding: 38px;
+  }
 
-.main-frame {
-  width: 735px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 124px;
-  margin-bottom: 124px;
-  background-color: #ffffff;
-  border-radius: 20px;
-  /* Usar padding en todos los lados para un espaciado consistente y eliminar la altura fija. */
-  padding: 38px;
-}
+  img {
+    /* Hacemos la imagen más ancha que su contenedor y usamos un margen negativo
+       para que se extienda hasta los bordes de la pantalla. */
+    width: calc(100% + 76px); /* 100% + (2 * 38px de padding) */
+    margin: -38px -38px -30px -38px; /* Margen superior, derecho, inferior, izquierdo */
+    max-width: none; /* Importante para anular cualquier max-width: 100% */
+    height: auto;
+    border-radius: 0px;
+    border: 0;
+  }
 
-header p {
-  height: 47px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22px;
-  margin: 0px;
-  text-align: left;
-}
+  h1 {
+    width: auto;
+    height: auto;
+    margin-top: 70px;
+    /*font-size: 37px;*/
+    font-size: clamp(1.7rem, 9vw, 2.313rem);
+    padding-top: 0;
+    padding-bottom: 20px;
+    display: flex;
+  }
 
-img {
-  width: 100%;
-  height: 100%;
-  border-radius: 9px;
-  margin-bottom: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
+  h2 {
+    width: auto;
+    height: auto;
+    font-size: clamp(1.5rem, 7.8vw, 2rem);
+    /*font-size: 32px;*/
+    margin-top: 30px;
+  }
 
-.PrepTime {
-  height: 184px;
-  border-radius: 20px;
-  background-color: rgba(255, 247, 252, 1);
-  padding-left: 29px;
-  padding-right: 29px;
-  padding-bottom: 11px;
-  margin-top: 28px;
-  margin-bottom: 31px;
-}
+  header p {
+    width: auto;
+    height: auto;
+    /*font-size: 16.3px;*/
+    font-size: clamp(0.875rem, 3.96vw, 1.019rem);
+    line-height: 28px;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+  }
 
-.PrepTime h2 {
-  width: 167px;
-  height: 29px;
-  color: rgba(122, 60, 85, 1);
-  font-size: 20px;
-  font-family: "outfit";
-  font-weight: 600;
-  line-height: 22px;
-  padding-top: 29px;
-  margin-bottom: 10px;
-}
+  .PrepTime {
+    width: auto;
+    height: auto;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
 
-.PrepTime ul {
-  width: 270px;
-  height: 105px;
-  margin-top: 0px;
-  /*font-weight: 600;*/
-  line-height: 29px;
-}
+  .PrepTime h2 {
+    width: auto;
+    height: auto;
+    font-size: 22px;
+    font-size: clamp(1.125rem, 5.34vw, 1.375rem);
+    margin-bottom: 20px;
+  }
 
-.PrepTime li {
-  margin-bottom: 5px;
-  padding-left: 20px;
-}
+  li {
+    width: auto;
+    height: auto;
+    /*font-size: 16.3px;*/
+    font-size: clamp(0.875rem, 3.96vw, 1.019rem);
+    line-height: 25px;
+  }
 
-.ingredients-list ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-size: 17px;
-}
+  .PrepTime ul {
+    width: auto;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 
-.ingredients-list li {
-  padding-left: 20px;
-  margin-bottom: 10px;
-}
+  .PrepTime li {
+    line-height: 25px;
+    /*font-size: 17px;*/
+    font-size: clamp(0.563rem, 7.8vw, 1.063rem);
+    margin-right: 0; /* Este margen causaba que el contenido se saliera de la pantalla */
+    padding-bottom: 10px;
+  }
 
-.instructions-list ol {
-  width: 660px;
-  height: 300px;
-  font-size: 17px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
+  .nutrition-table caption,
+  .nutrition-table th,
+  .nutrition-table td {
+    width: auto;
+    height: auto;
+    /*font-size: 17px;*/
+    font-size: clamp(0.563rem, 7.8vw, 1.063rem);
+    line-height: 28px;
+  }
 
-.instructions-list li {
-  padding-left: 20px;
-  margin-bottom: 10px;
-}
+  .nutrition-table th {
+    padding-left: 35px;
+    padding-right: 10px;
+  }
 
-.nutrition-table {
-  width: 100%;
-  border-collapse: collapse; /* Une los bordes de las celdas para un look limpio */
-  margin-top: 24px;
-}
+  .nutrition-table td {
+    padding-left: 22px;
+    padding-right: 45px;
+  }
 
-.nutrition-table caption{
-  font-size: 16px;
-  font-weight: 400;
-  font-family: "outfit";
-  color: rgba(119, 116, 111, 1);
-  padding-bottom: 19px;
-  line-height: 29px;
-  text-align: left;
-  width: 645px;
-  height: 31px;
-}
-
-.nutrition-table th, .nutrition-table td {
-  font-size: 16px;
-  text-align: left;
-  padding: 12px 0px 12px 32px;
-  font-family: "outfit";
-  /* Esta es la línea horizontal que reemplaza al <hr> */
-  border-bottom: 1px solid rgba(224, 224, 224, 1);
-}
-
-.nutrition-table th{
-  font-weight: 400;
-  color: rgba(119, 116, 111, 1);
-  width: 72px;
-  height: 31px;
-  padding-right: 200px;
-}
-
-.nutrition-table td{
-  font-weight: 600;
-  color: rgba(129, 75, 67, 1);
-  
-}
-
-.nutrition-table tr:last-child th,
-.nutrition-table tr:last-child td {
-  border-bottom: none;
-}
-
-hr {
-  width: 100%;
-  height: 0px;
-  border: 1px solid rgba(224, 224, 224, 1);
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
-
-li::marker {
-  color: rgba(122, 60, 85, 1);
-  font-size: small;
-}
-
-.instructions-list li::marker {
-  color: rgba(122, 60, 85, 1);
-  font-weight: bold;
-  font-size: 1em; /* Makes the marker size relative to the list item's font size */
+  footer {
+    width: auto;
+    height: auto;
+    font-size: 10px;
+    padding-left: 5px;
+  }
 }
