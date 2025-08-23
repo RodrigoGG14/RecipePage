@@ -81,6 +81,7 @@
     display: block;
   }
 
+  /*surgio un error aca en la version de desktop, revisar luego de terminar con la imagen movil*/
   .PrepTime {
     height: 184px;
     border-radius: 20px;
