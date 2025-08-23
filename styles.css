@@ -8,6 +8,8 @@
   src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
 }
 
+/* Aplicamos box-sizing: border-box a todos los elementos para que el padding y el border
+   se incluyan en el ancho y alto total del elemento, facilitando el diseño responsivo */
 *,
 *::before,
 *::after {
@@ -68,8 +70,9 @@ body {
   }
 
   header p {
-    height: 47px;
-    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
     font-weight: 400;
     line-height: 22px;
     margin: 0px;
@@ -86,7 +89,6 @@ body {
     display: block;
   }
 
-  /*surgio un error aca en la version de desktop, revisar luego de terminar con la imagen movil*/
   .PrepTime {
     height: 184px;
     border-radius: 20px;
@@ -99,8 +101,6 @@ body {
   }
 
   .PrepTime h2 {
-    width: 167px;
-    height: 29px;
     color: rgba(122, 60, 85, 1);
     font-size: 20px;
     font-family: "outfit";
@@ -111,8 +111,6 @@ body {
   }
 
   .PrepTime ul {
-    width: 270px;
-    height: 105px;
     margin-top: 0px;
     /*font-weight: 600;*/
     line-height: 29px;
@@ -139,7 +137,6 @@ body {
   .instructions-list ol {
     width: 660px;
     height: 300px;
-    font-size: 17px;
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -147,6 +144,7 @@ body {
   .instructions-list li {
     padding-left: 20px;
     margin-bottom: 10px;
+    font-size: 16px;
   }
 
   .nutrition-table {
@@ -163,8 +161,6 @@ body {
     padding-bottom: 19px;
     line-height: 29px;
     text-align: left;
-    width: 645px;
-    height: 31px;
   }
 
   .nutrition-table th,
