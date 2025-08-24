@@ -22,7 +22,7 @@ body {
 }
 
 /*Media query para desktop*/
-@media (max-width: 1920px) {
+@media (max-width: 3840px) {
   body {
     background-color: #f3e5d8;
   }
