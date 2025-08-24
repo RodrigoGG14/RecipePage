@@ -21,192 +21,191 @@ body {
   margin: 0;
 }
 
-/*Media query para desktop*/
-@media (max-width: 3840px) {
-  body {
-    background-color: #f3e5d8;
-  }
+/* Estilos base para desktop (Desktop-first) */
+/* Estos son los estilos por defecto. La media query para móvil los sobreescribirá en pantallas más pequeñas. */
+body {
+  background-color: #f3e5d8;
+}
 
-  p,
-  ul,
-  ol {
-    font-size: 17px;
-    color: rgba(119, 116, 111, 1);
-    font-family: "outfit";
-  }
+p,
+ul,
+ol {
+  font-size: 17px;
+  color: rgba(119, 116, 111, 1);
+  font-family: "outfit";
+}
 
-  h1 {
-    color: rgba(49, 48, 46, 1);
-    font-family: "young-serif";
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 100%;
-    padding-top: 30px;
-    padding-bottom: 19px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+h1 {
+  color: rgba(49, 48, 46, 1);
+  font-family: "young-serif";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 100%;
+  padding-top: 30px;
+  padding-bottom: 19px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 
-  h2 {
-    color: rgba(129, 75, 67, 1);
-    font-family: "young-serif";
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 29px;
-  }
+h2 {
+  color: rgba(129, 75, 67, 1);
+  font-family: "young-serif";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 29px;
+}
 
-  .main-frame {
-    width: 735px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 124px;
-    margin-bottom: 124px;
-    background-color: #ffffff;
-    border-radius: 20px;
-    /* Usar padding en todos los lados para un espaciado consistente y eliminar la altura fija. */
-    padding: 38px;
-  }
+.main-frame {
+  width: 735px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 124px;
+  margin-bottom: 124px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  /* Usar padding en todos los lados para un espaciado consistente y eliminar la altura fija. */
+  padding: 38px;
+}
 
-  header p {
-    width: 100%;
-    height: 100%;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-    margin: 0px;
-    text-align: left;
-  }
+header p {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0px;
+  text-align: left;
+}
 
-  img {
-    width: 100%;
-    height: 100%;
-    border-radius: 9px;
-    margin-bottom: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 9px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 
-  .PrepTime {
-    height: 184px;
-    border-radius: 20px;
-    background-color: rgba(255, 247, 252, 1);
-    padding-left: 29px;
-    padding-right: 29px;
-    padding-bottom: 11px;
-    margin-top: 28px;
-    margin-bottom: 31px;
-  }
+.PrepTime {
+  height: 184px;
+  border-radius: 20px;
+  background-color: rgba(255, 247, 252, 1);
+  padding-left: 29px;
+  padding-right: 29px;
+  padding-bottom: 11px;
+  margin-top: 28px;
+  margin-bottom: 31px;
+}
 
-  .PrepTime h2 {
-    color: rgba(122, 60, 85, 1);
-    font-size: 20px;
-    font-family: "outfit";
-    font-weight: 600;
-    line-height: 22px;
-    padding-top: 29px;
-    margin-bottom: 10px;
-  }
+.PrepTime h2 {
+  color: rgba(122, 60, 85, 1);
+  font-size: 20px;
+  font-family: "outfit";
+  font-weight: 600;
+  line-height: 22px;
+  padding-top: 29px;
+  margin-bottom: 10px;
+}
 
-  .PrepTime ul {
-    margin-top: 0px;
-    /*font-weight: 600;*/
-    line-height: 29px;
-  }
+.PrepTime ul {
+  margin-top: 0px;
+  /*font-weight: 600;*/
+  line-height: 29px;
+}
 
-  .PrepTime li {
-    margin-bottom: 5px;
-    padding-left: 20px;
-  }
+.PrepTime li {
+  margin-bottom: 5px;
+  padding-left: 20px;
+}
 
-  .ingredients-list ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 17px;
-  }
+.ingredients-list ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 17px;
+}
 
-  .ingredients-list li {
-    padding-left: 20px;
-    margin-bottom: 10px;
-  }
+.ingredients-list li {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
 
-  .instructions-list ol {
-    width: 660px;
-    height: 300px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+.instructions-list ol {
+  width: 660px;
+  height: 300px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 
-  .instructions-list li {
-    padding-left: 20px;
-    margin-bottom: 10px;
-    font-size: 16px;
-  }
+.instructions-list li {
+  padding-left: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
 
-  .nutrition-table {
-    width: 100%;
-    border-collapse: collapse; /* Une los bordes de las celdas para un look limpio */
-    margin-top: 24px;
-  }
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse; /* Une los bordes de las celdas para un look limpio */
+  margin-top: 24px;
+}
 
-  .nutrition-table caption {
-    font-size: 16px;
-    font-weight: 400;
-    font-family: "outfit";
-    color: rgba(119, 116, 111, 1);
-    padding-bottom: 19px;
-    line-height: 29px;
-    text-align: left;
-  }
+.nutrition-table caption {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "outfit";
+  color: rgba(119, 116, 111, 1);
+  padding-bottom: 19px;
+  line-height: 29px;
+  text-align: left;
+}
 
-  .nutrition-table th,
-  .nutrition-table td {
-    font-size: 16px;
-    text-align: left;
-    padding: 12px 0px 12px 32px;
-    font-family: "outfit";
-    /* Esta es la línea horizontal que reemplaza al <hr> */
-    border-bottom: 1px solid rgba(224, 224, 224, 1);
-  }
+.nutrition-table th,
+.nutrition-table td {
+  font-size: 16px;
+  text-align: left;
+  padding: 12px 0px 12px 32px;
+  font-family: "outfit";
+  /* Esta es la línea horizontal que reemplaza al <hr> */
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+}
 
-  .nutrition-table th {
-    font-weight: 400;
-    color: rgba(119, 116, 111, 1);
-    width: 72px;
-    height: 31px;
-    padding-right: 200px;
-  }
+.nutrition-table th {
+  font-weight: 400;
+  color: rgba(119, 116, 111, 1);
+  width: 72px;
+  height: 31px;
+  padding-right: 200px;
+}
 
-  .nutrition-table td {
-    font-weight: 600;
-    color: rgba(129, 75, 67, 1);
-  }
+.nutrition-table td {
+  font-weight: 600;
+  color: rgba(129, 75, 67, 1);
+}
 
-  .nutrition-table tr:last-child th,
-  .nutrition-table tr:last-child td {
-    border-bottom: none;
-  }
+.nutrition-table tr:last-child th,
+.nutrition-table tr:last-child td {
+  border-bottom: none;
+}
 
-  hr {
-    width: 100%;
-    height: 0px;
-    border: 1px solid rgba(224, 224, 224, 1);
-    margin-top: 32px;
-    margin-bottom: 32px;
-  }
+hr {
+  width: 100%;
+  height: 0px;
+  border: 1px solid rgba(224, 224, 224, 1);
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
 
-  li::marker {
-    color: rgba(122, 60, 85, 1);
-    font-size: small;
-  }
+li::marker {
+  color: rgba(122, 60, 85, 1);
+  font-size: small;
+}
 
-  .instructions-list li::marker {
-    color: rgba(122, 60, 85, 1);
-    font-weight: bold;
-    font-size: 1em; /* Makes the marker size relative to the list item's font size */
-  }
+.instructions-list li::marker {
+  color: rgba(122, 60, 85, 1);
+  font-weight: bold;
+  font-size: 1em; /* Makes the marker size relative to the list item's font size */
 }
 
 /* Media query para dispositivos moviles */
