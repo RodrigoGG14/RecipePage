@@ -56,7 +56,7 @@ h2 {
 }
 
 .main-frame {
-  width: 735px;
+  max-width: 735px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 124px;
@@ -133,8 +133,8 @@ img {
 }
 
 .instructions-list ol {
-  width: 660px;
-  height: 300px;
+  /* Se eliminan el width y height fijos para que la lista se adapte
+     automáticamente al contenido y al ancho del contenedor padre. */
   margin-top: 0px;
   margin-bottom: 0px;
 }
